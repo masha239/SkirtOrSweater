@@ -34,7 +34,7 @@ questions = dict()
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
     bot.send_message(message.from_user.id, 'Привет! Ты не знаешь, что за предмет одежды '
-                                           'сфотографировал? Смело присылай его мне с помощью команды /send!')
+                                           'сфотографировал? Смело присылай его мне!')
 
 
 @bot.message_handler(content_types=['photo'])
